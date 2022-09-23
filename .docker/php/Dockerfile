@@ -16,6 +16,8 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ 
 RUN curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.deb.sh' | bash
 RUN apt-get install symfony-cli
 
+RUN pecl install swoole && docker-php-ext-enable swoole
+
 WORKDIR /var/www
 
 RUN groupadd -f --gid $GROUP_ID user

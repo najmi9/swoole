@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f231d6539b34588fd11066e5f9db8975",
+    "content-hash": "c2e3f6d8244364c309f194db8cc8d81f",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2154,6 +2154,61 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.0"
             },
             "time": "2021-07-14T16:46:02+00:00"
+        },
+        {
+            "name": "runtime/swoole",
+            "version": "0.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-runtime/swoole.git",
+                "reference": "eeba8e5987a00b02cc6732a64a948956b5362942"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-runtime/swoole/zipball/eeba8e5987a00b02cc6732a64a948956b5362942",
+                "reference": "eeba8e5987a00b02cc6732a64a948956b5362942",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/runtime": "^5.3 || ^6.0"
+            },
+            "conflict": {
+                "ext-swoole": "<4.6.0"
+            },
+            "require-dev": {
+                "illuminate/http": "^8.48",
+                "swoole/ide-helper": "^4.6",
+                "symfony/http-foundation": "^5.3 || ^6.0",
+                "symfony/http-kernel": "^5.4 || ^6.0",
+                "symfony/phpunit-bridge": "^5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Runtime\\Swoole\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com"
+                }
+            ],
+            "description": "Swoole runtime",
+            "support": {
+                "source": "https://github.com/php-runtime/swoole/tree/0.3.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/nyholm",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-02-26T17:19:48+00:00"
         },
         {
             "name": "sensio/framework-extra-bundle",
